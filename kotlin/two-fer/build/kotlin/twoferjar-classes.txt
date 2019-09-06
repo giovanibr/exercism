@@ -1,1 +1,0 @@
-/home/08561225726/exercism/kotlin/two-fer/build/classes/kotlin/main/TwoferKt.class
