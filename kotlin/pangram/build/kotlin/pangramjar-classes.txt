@@ -1,1 +1,0 @@
-/home/08561225726/exercism/kotlin/pangram/build/classes/kotlin/main/Pangram$Companion.class:/home/08561225726/exercism/kotlin/pangram/build/classes/kotlin/main/Pangram.class:/home/08561225726/exercism/kotlin/pangram/build/classes/kotlin/main/PangramKt.class
