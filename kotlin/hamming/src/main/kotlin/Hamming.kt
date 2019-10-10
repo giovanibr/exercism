@@ -1,17 +1,18 @@
-class Hamming {
-    companion object {
-        fun compute(strand1: String = "", strand2: String = "") : Int {
+object Hamming {
 
-            if(strand1.length != strand2.length) throw IllegalArgumentException("left and right strands must be of equal length.")
+    fun compute(strand1: String = "", strand2: String = ""): Int {
+        require(strand1.length == strand2.length) { "left and right strands must be of equal length." }
 
-            var hamming = 0
+        val pair: List<Pair<Char, Char>> = strand1.toCharArray().zip(strand2.toCharArray())
+        println(pair)
 
-            strand1.toCharArray().forEachIndexed { i, c ->
-                if(!c.equals(strand2.toCharArray()[i])) hamming++
-            }
+        var hamming = 0
 
-            return hamming
-
+        pair.forEach {
+            if (!(it.first == it.second))
+                hamming++
         }
+
+        return hamming
     }
 }
